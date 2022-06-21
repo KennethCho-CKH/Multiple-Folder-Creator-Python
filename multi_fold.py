@@ -21,6 +21,7 @@ def suscess_msg():
 #if the folder existed already, it will stop it from being over written
 def fail_msg():
     print("Folders cannot be created, try again")
+    open('README.md')
     if Error.errno != errno.EEXIST:
         raise
 
