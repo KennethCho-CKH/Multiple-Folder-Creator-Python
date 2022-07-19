@@ -14,13 +14,10 @@ var input_filename string
 
 func main() {
 
-	fmt.Print("Type where you want your folders to be created: ")
+	fmt.Print("Enter where you want your folders to be created: ")
 	fmt.Scanln(&input_folderpath)
-	fmt.Print("Type the filename you desired: ")
+	fmt.Print("Enter the filename you desired: ")
 	fmt.Scanln(&input_filename)
-
-	//folderpath := strings.Replace(input_folderpath, `\`, `/`, 10000)
-	//folderpath := filepath.FromSlash(input_folderpath)
 
 	folderpath := input_folderpath
 
@@ -34,7 +31,7 @@ func main() {
 				log.Println(err)
 			}
 		}
-		fmt.Println("Program:" + " " + filename[list_next] + " " + "created suscessfully")
+		fmt.Println("Program: " + filename[list_next] + " created suscessfully")
 	}
-	fmt.Println("Program:" + " " + strconv.Itoa(len(filename)) + " " + "folders created suscessfully")
+	fmt.Println("Program: " + strconv.Itoa(len(filename)) + " folders created suscessfully")
 }
