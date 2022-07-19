@@ -13,7 +13,7 @@ I tried to use different programming language to rewrite it, this is the list of
 Nothing to install
 1. Download the file as zip,
 2. Unzip it 
-3. Navigate to the Go folder
+3. Navigate to the Python folder
 4. Run `main.exe` 
 
 ## How to use
